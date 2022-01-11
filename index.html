@@ -4,7 +4,7 @@
     <title>list</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="style-list.css" />
+    <link rel="stylesheet" type="text/css" href="/style/list.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -73,120 +73,23 @@
 
     <div class="container">
       <!--full box-->
-      <div class="row justify-content-around">
+      <div class="row justify-content-around" id="row">
         <!--row-->
-        <div class="card col-md-3">
-          <img
-            class="card-img-top"
-            src="./assets/sample.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6>card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btnCard">Go somewhere</a>
-          </div>
-        </div>
+      </div>
+      <div id="nav"></div>
+      <div id="breadcrumb"></div>
+      <div id="app"></div>
 
-        <div class="card col-md-3">
-          <img
-            class="card-img-top"
-            src="./assets/sample.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6>card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btnCard">Go somewhere</a>
-          </div>
-        </div>
-
-        <div class="card col-md-3">
-          <img
-            class="card-img-top"
-            src="./assets/sample.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6>card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btnCard">Go somewhere</a>
-          </div>
-        </div>
+      <div class="container-fluid">
+        <!-- List of posts #row -->
+        <div class="row justify-content-start mx-5" id="rowa"></div>
       </div>
       <br />
-      <div class="row justify-content-around">
-        <!--row-->
-        <div class="card col-md-3">
-          <img
-            class="card-img-top"
-            src="./assets/sample.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6>card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btnCard">Go somewhere</a>
-          </div>
-        </div>
-
-        <div class="card col-md-3">
-          <img
-            class="card-img-top"
-            src="./assets/sample.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6>card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btnCard">Go somewhere</a>
-          </div>
-        </div>
-
-        <div class="card col-md-3">
-          <img
-            class="card-img-top"
-            src="./assets/sample.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6>card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btnCard">Go somewhere</a>
-          </div>
-        </div>
-      </div>
+      <div id="loadmore"></div>
     </div>
     <br />
 
-    <div class="row justify-content-center">
-      <button type="button" class="btn color">
-        <i class="bi bi-caret-down"></i>Load More
-      </button>
-    </div>
+    <div class="row justify-content-center" id="loadmore"></div>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
