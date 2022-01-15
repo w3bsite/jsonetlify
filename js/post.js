@@ -225,7 +225,7 @@ var card = (title, content) => {
 </div>`;
 };
 
-function load(x) {
+function load() {
   container.innerHTML = ``;
   var url = new URL(window.location);
   var articleNumber = url.searchParams.get("article");
@@ -235,6 +235,6 @@ function load(x) {
 }
 
 (async function () {
-  await load(0);
+  await load();
 })();
 window.load = load;

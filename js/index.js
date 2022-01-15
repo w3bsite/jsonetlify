@@ -212,6 +212,7 @@ document.querySelector("#app").innerHTML = "";
 const row = document.querySelector("#row");
 var postList = postObjects;
 if (row) row.innerHTML = `<h2>loading</h2>`;
+
 var card = (title, content, article) => {
   return `        <div class="card col-md-3">
   <div class="card-body">
@@ -241,28 +242,16 @@ function buttom() {
 }
 
 let i = 4;
-// function load(x) {
-//   row.innerHTML = ``;
-//   x ? (i = i + x) : (i = i + 0);
-//   fetch(url + "/posts")
-//     .then((response) => response.json())
-//     .then((res) => {
-//       res.slice(0, i).forEach((element) => {
-//         row.innerHTML += card(element.title, element.body);
-//       });
-//     });
-// }
 
 function load(x) {
   row.innerHTML = ``;
   x ? (i = i + x) : (i = i + 0);
-  postList.slice(0, i).forEach((element, i) => {
+  postList.forEach((element, i) => {
     row.innerHTML += card(element.title, element.content, i);
   });
 }
 
-(async function () {
-  await load(0);
-})();
+load(0);
+
 window.load = load;
 window.buttom = buttom;
